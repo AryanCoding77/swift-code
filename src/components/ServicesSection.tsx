@@ -36,31 +36,31 @@ const ServicesSection: React.FC = () => {
     },
   };
 
-  // Custom color schemes for each card
+  // Custom color schemes for each card - updated to blue and aqua theme
   const cardStyles = [
     {
-      background: "linear-gradient(135deg, rgba(28, 34, 89, 0.9) 0%, rgba(44, 53, 117, 0.8) 100%)",
-      iconBg: "bg-gradient-to-br from-blue-500/30 to-indigo-600/20",
-      iconColor: "text-blue-400",
-      borderColor: "border-blue-500/20",
-      shadowColor: "shadow-blue-500/20",
-      buttonColor: "text-blue-400",
-    },
-    {
-      background: "linear-gradient(135deg, rgba(26, 60, 75, 0.9) 0%, rgba(40, 85, 104, 0.8) 100%)",
-      iconBg: "bg-gradient-to-br from-cyan-500/30 to-blue-600/20",
-      iconColor: "text-cyan-400",
+      background: "linear-gradient(135deg, rgba(3, 105, 161, 0.9) 0%, rgba(6, 182, 212, 0.8) 100%)",
+      iconBg: "bg-gradient-to-br from-blue-500/30 to-cyan-600/20",
+      iconColor: "text-cyan-300",
       borderColor: "border-cyan-500/20",
       shadowColor: "shadow-cyan-500/20",
-      buttonColor: "text-cyan-400",
+      buttonColor: "text-cyan-300",
     },
     {
-      background: "linear-gradient(135deg, rgba(54, 28, 76, 0.9) 0%, rgba(84, 44, 117, 0.8) 100%)",
-      iconBg: "bg-gradient-to-br from-purple-500/30 to-pink-600/20",
-      iconColor: "text-purple-400",
-      borderColor: "border-purple-500/20",
-      shadowColor: "shadow-purple-500/20",
-      buttonColor: "text-purple-400",
+      background: "linear-gradient(135deg, rgba(8, 145, 178, 0.9) 0%, rgba(14, 165, 233, 0.8) 100%)",
+      iconBg: "bg-gradient-to-br from-cyan-500/30 to-blue-500/20",
+      iconColor: "text-blue-300",
+      borderColor: "border-blue-500/20",
+      shadowColor: "shadow-blue-500/20",
+      buttonColor: "text-blue-300",
+    },
+    {
+      background: "linear-gradient(135deg, rgba(2, 132, 199, 0.9) 0%, rgba(56, 189, 248, 0.8) 100%)",
+      iconBg: "bg-gradient-to-br from-blue-400/30 to-cyan-500/20",
+      iconColor: "text-sky-300",
+      borderColor: "border-sky-500/20",
+      shadowColor: "shadow-sky-500/20",
+      buttonColor: "text-sky-300",
     },
   ];
 
@@ -82,10 +82,10 @@ const ServicesSection: React.FC = () => {
   return (
     <section id="services" className="py-32 relative overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/10 rounded-full filter blur-[120px] animate-pulse-slow" />
-      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-purple-600/15 rounded-full filter blur-[120px] animate-pulse-slow" style={{ animationDelay: "1s" }} />
+      <div className="absolute top-1/4 right-0 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-[120px] animate-pulse-slow" />
+      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-blue-600/15 rounded-full filter blur-[120px] animate-pulse-slow" style={{ animationDelay: "1s" }} />
       <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-500/15 rounded-full filter blur-[100px] animate-pulse-slow" style={{ animationDelay: "2s" }} />
-      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-indigo-500/10 rounded-full filter blur-[100px] animate-pulse-slow" style={{ animationDelay: "3s" }} />
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full filter blur-[100px] animate-pulse-slow" style={{ animationDelay: "3s" }} />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
@@ -95,9 +95,9 @@ const ServicesSection: React.FC = () => {
           className="max-w-3xl mx-auto text-center mb-20"
         >
           <div className="inline-block mb-3">
-            <span className="inline-block py-1 px-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white text-sm font-medium rounded-full border border-blue-500/20">Our Services</span>
+            <span className="inline-block py-1 px-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-white text-sm font-medium rounded-full border border-cyan-500/20">Our Services</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-white/80">What I Offer</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-100 to-white/80">What I Offer</h2>
           <p className="text-[#b3b3b3] text-lg max-w-2xl mx-auto">
             Transforming businesses with AI-powered solutions and rapid development.
           </p>

@@ -78,7 +78,7 @@ const PricingSection: React.FC = () => {
     {
       name: "Swift Start",
       price: 999,
-      gradient: "from-blue-400 to-indigo-600",
+      gradient: "from-blue-400 to-cyan-500",
       icon: <Zap className="h-7 w-7 text-white" />,
       description: "Perfect for MVPs and quick launches",
       features: [
@@ -94,7 +94,7 @@ const PricingSection: React.FC = () => {
     {
       name: "Swift Pro",
       price: 2499,
-      gradient: "from-indigo-500 to-purple-600",
+      gradient: "from-cyan-400 to-blue-600",
       icon: <Sparkles className="h-7 w-7 text-white" />,
       description: "Full-featured solution for businesses",
       isPopular: true,
@@ -111,7 +111,7 @@ const PricingSection: React.FC = () => {
     {
       name: "Swift Enterprise",
       price: "Custom",
-      gradient: "from-purple-500 to-pink-600",
+      gradient: "from-blue-600 to-cyan-700",
       icon: <Crown className="h-7 w-7 text-white" />,
       description: "For larger, complex projects",
       features: [
@@ -139,7 +139,7 @@ const PricingSection: React.FC = () => {
               height: `${(i+1) * 50 + 100}px`,
               left: `${(i * 15) + 5}%`,
               top: `${(i * 10) + 10}%`,
-              background: `radial-gradient(circle, rgba(79, 70, 229, 0.15) 0%, rgba(0, 0, 0, 0) 70%)`,
+              background: `radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(0, 0, 0, 0) 70%)`,
               zIndex: 0
             }}
             custom={i}
@@ -155,7 +155,7 @@ const PricingSection: React.FC = () => {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={`star-${i}`}
-            className="absolute w-1 h-1 bg-white rounded-full"
+            className="absolute w-1 h-1 bg-cyan-200 rounded-full"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -173,7 +173,7 @@ const PricingSection: React.FC = () => {
         ))}
       </div>
 
-      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-purple-500/10 rounded-full filter blur-[100px]" />
+      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-cyan-500/10 rounded-full filter blur-[100px]" />
       <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-blue-500/10 rounded-full filter blur-[100px]" />
       
       <motion.div 
@@ -188,21 +188,21 @@ const PricingSection: React.FC = () => {
           className="max-w-3xl mx-auto text-center mb-20"
         >
           <motion.div 
-            className="inline-block mb-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-px rounded-lg"
+            className="inline-block mb-3 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-400 p-px rounded-lg"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.4 }}
           >
             <div className="bg-black bg-opacity-50 backdrop-blur-xl px-4 py-1 rounded-lg">
               <div className="flex items-center space-x-2">
-                <Star className="h-4 w-4 text-yellow-400" />
+                <Star className="h-4 w-4 text-cyan-300" />
                 <span className="text-white font-medium text-sm">Premium Solutions</span>
               </div>
             </div>
           </motion.div>
           
           <motion.h2 
-            className="text-4xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 mb-6"
+            className="text-4xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-400 mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
@@ -220,12 +220,12 @@ const PricingSection: React.FC = () => {
           </motion.p>
           
           <motion.div 
-            className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-500/10 backdrop-blur-md border border-indigo-500/20"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-md border border-cyan-500/20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <Zap className="h-5 w-5 text-indigo-400" />
+            <Zap className="h-5 w-5 text-cyan-400" />
             <span className="font-medium text-white">Built Swift. Built Smart.</span>
           </motion.div>
         </motion.div>
@@ -263,14 +263,14 @@ const PricingSection: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 + i * 0.1, duration: 0.4 }}
                   >
-                    <span className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-medium px-4 py-1 rounded-full shadow-lg">
+                    <span className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-medium px-4 py-1 rounded-full shadow-lg">
                       Most Popular
                     </span>
                   </motion.div>
                 )}
                 
                 <div className={`backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl overflow-hidden 
-                  ${plan.isPopular ? 'mt-2 shadow-xl shadow-indigo-500/20' : 'shadow-lg'} 
+                  ${plan.isPopular ? 'mt-2 shadow-xl shadow-cyan-500/20' : 'shadow-lg'} 
                   transition-all duration-300`}
                 >
                   <div className={`h-2 w-full bg-gradient-to-r ${plan.gradient}`}></div>
@@ -311,7 +311,7 @@ const PricingSection: React.FC = () => {
                     
                     <motion.button
                       className={`w-full py-3 px-4 rounded-xl font-medium text-white transition-all 
-                        bg-gradient-to-r ${plan.gradient} hover:shadow-lg hover:shadow-indigo-500/20
+                        bg-gradient-to-r ${plan.gradient} hover:shadow-lg hover:shadow-cyan-500/20
                         transform hover:-translate-y-1 active:translate-y-0 duration-300`}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
